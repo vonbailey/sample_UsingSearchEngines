@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Written By:  Otto Von Bailey
+Title: Sample Program for Otto Von Bailey
+Purpose:  Demonstrate programming skills
+-->
+<html>
+    <head>
+        <title>Sample Search Program</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src = "theEngine.js"></script>
+        <style>
+        body {
+            background-color: lightblue;
+            font-family: arial;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Sample Search Program</h1>
+            <p>First Enter Search Criteria...</p>
+            <input 
+                id="sCriteria" 
+                type="text" 
+                size="40">
+            <br>
+            <br>
+            <p>...then decide on the search engine...</p>
+            <input
+                type="checkbox"
+                id="g"
+                value="google"
+                onclick="setOne(1)"
+                > <p1>Google</p1>
+            <br>
+            <input
+                type="checkbox"
+                id="b"
+                value="bing"
+                onclick="setOne(2)"
+                > <p1>Bing</p1>
+            <br>
+            <input
+                type="checkbox"
+                id="y"
+                value="yahoo"
+                onclick="setOne(3)"
+                > <p1>Yahoo!</p1>
+            <br> 
+            <br>
+            <p>...and finally, select a browser</p>
+            <input 
+                id="IE"
+                type="submit"
+                value="Internet Explorer"
+                onclick="startUp(1)">
+            <input 
+                id="Chrome"
+                type="submit"
+                value="Chrome"
+                onclick="startUp(2)">
+        </div>
+    </body>
+</html>
